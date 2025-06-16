@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+        table{
+            margin: auto;
+            width: 1000px;
+            height: 90px;
+        }
+        td{
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-bottom: 4px;
+            padding-top: 4px;
+        }
+        fieldset {
+        display: flex;
+        justify-content: center;
+        border: 1px solid black;
+        padding: 10px;
+        margin-right: 20%;
+        margin-left: 20%;
+        }
+        .center{
+            text-align: center;
+        }
+        button{
+            height: 30px;
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Application Form</h2>
+    <form action="thankyou.html" method="post">
+    <fieldset class="centered">
+        <legend>Personal Details</legend>
+        <table>
+            <tr>
+                <td><label for="applicantName">Applicant's full Name</label></td>
+                <td>
+                    <select name="" id="">
+                        <option value="Select" selected disabled>Select</option>
+                        <option value="Ms.">Mr.</option>
+                        <option value="Mrs.">Mrs.</option>
+                        <option value="Miss.">Miss.</option>
+                        <option value="Ms.">Ms.</option>
+                    </select>
+                    <input id="applicantName" type="text" >
+                </td>
+                <td><label for="guardian">Care Of</label></td>
+                <td>
+                    <input type="radio" id="guardian" name="guardian"><label>Parent</label>
+                    <input type="radio" id="guardian" name="guardian"><label>Guardian</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="fatherName">Father's Name</label></td>
+                <td>
+                    <select name="" id="" disabled>
+                        <option value="Mr." selected >Mrs.</option>
+                    </select>
+                    <input id="fatherName" type="text" >
+                </td>
+                <td><label for="motherName">Mother's Name</label></td>
+                <td>
+                    <select name="" id="" disabled>
+                        <option value="Mr." selected disabled>Mr.</option>
+                    </select>
+                    <input id="motherName" type="text" >
+                </td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td>
+                    <input type="radio" name="gender" id="gender"><label for="male">Male</label>
+                    <input type="radio" name="gender" id="gender"><label for="female">Female</label>
+                    <input type="radio" name="gender" id="gender"><label for="others">Others</label>
+                </td>
+                <td><label for="dob">Date of Birth</label></td>
+                <td>
+                    <input type="date" name="dob" id="dob">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="ms">Martial Status</label></td>
+                <td><select name="ms" id="ms">
+                    <option value="Select" selected disabled>Select</option>
+                    <option id="ms">Yes</option>
+                    <option id="ms">No</option>
+                </select>
+                </td>
+                <td><label for="category">Category</label></td>
+                <td><select name="category" for="category">
+                    <option value="Select" selected disabled>--Select--</option>
+                    <option id="category">Gernal</option>
+                    <option id="category">OBC</option>
+                    <option id="category">SC</option>
+                    <option id="category">ST</option>
+                    <option id="category">Other</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="handicapped">Handicapped</label></td>
+                <td>
+                    <input type="radio" name="handicapped" id="handicapped"><label for="yes">Yes</label>
+                    <input type="radio" name="handicapped" id="handicapped"><label for="no">No</label>
+                </td>
+                <td><label for="exServiceman">Ex-Serviceman</label></td>
+                <td>
+                    <input type="radio" name="exServiceman" id="exServiceman"><label for="yes">Yes</label>
+                    <input type="radio" name="exServiceman" id="exServiceman"><label for="no">No</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="ews">EWS</label></td>
+                <td>
+                    <input type="radio" name="ews" id="ews"><label for="yes">Yes</label>
+                    <input type="radio" name="ews" id="ews"><label for="no">No</label>
+                </td>
+                <td><label for="religion">Religion</label></td>
+                <td><select>
+                    <option value="Select" for="religion" selected disabled>--Select--</option>
+                    <option id="religion">Christianity</option>
+                    <option id="religion">Islam</option>
+                    <option id="religion">Hinduism</option>
+                    <option id="religion">Sikhism</option>
+                    <option id="religion">Buddhism</option>
+                    <option id="religion">Others</option>
+                </select>
+            </td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Contact Detail's</legend>
+        <table>
+            <tr>
+                <td><label for="phone">Mobile Number</label></td>
+                <td><input type="tel" name="phone" id="phone" placeholder="Enter Your Phone Number"></td>
+                <td><label for="mail">Email ID</label></td>
+                <td><input type="email" name="email" id="email" placeholder="Enter Your E-mail"></td>
+            </tr>
+            <tr>
+                <td><label for="address1">Address Line 1</label></td>
+                <td><input type="text" name="address1" id="address1" placeholder=""></td>
+                <td><label for="address2">Address Line 2</label></td>
+                <td><input type="text" name="address2" id="address2" placeholder=""></td>
+            </tr>
+            <tr>
+                <td><label for="city">City</label></td>
+                <td><input type="text" name="city" id="city" placeholder=""></td>
+                <td><label for="state">State</label></td>
+                <td><input list="states" name="state" placeholder="Type or select a state">
+                <datalist id="states">
+                    <option value="Andhra Pradesh">
+                    <option value="Arunachal Pradesh">
+                    <option value="Assam">
+                    <option value="Bihar">
+                    <option value="Chhattisgarh">
+                    <option value="Goa">
+                    <option value="Gujarat">
+                    <option value="Haryana">
+                    <option value="Himachal Pradesh">
+                    <option value="Jharkhand">
+                    <option value="Karnataka">
+                    <option value="Kerala">
+                    <option value="Madhya Pradesh">
+                    <option value="Maharashtra">
+                    <option value="Manipur">
+                    <option value="Meghalaya">
+                    <option value="Mizoram">
+                    <option value="Nagaland">
+                    <option value="Odisha">
+                    <option value="Punjab">
+                    <option value="Rajasthan">
+                    <option value="Sikkim">
+                    <option value="Tamil Nadu">
+                    <option value="Telangana">
+                    <option value="Tripura">
+                    <option value="Uttar Pradesh">
+                    <option value="Uttarakhand">
+                    <option value="West Bengal">
+                    <option value="Delhi">
+                    <option value="Jammu and Kashmir">
+                    <option value="Ladakh">
+
+                </datalist></td>
+            </tr>
+            <tr>
+                <td><label for="pin">Pin</label></td>
+                <td><input type="number" id="pin"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Qualification Details</legend>
+        <table>
+            <tr>
+                <th><label for="sno">S.No.</label></th>
+                <th><label for="qualification">Qualification</label></th>
+                <th><label for="boardUni">Board/University</label></th>
+                <th><label for="year">Passing Year</label></th>
+                <th><label for="mmarks">Max Marks</label></th>
+                <th><label for="omarks">Marks Obtained</label></th>
+                <th><label for="percent">Percentage</label></th>
+            </tr>
+            <tr>
+                <td><label for="sno">1</label></td>
+                <td><select id="qualification1" name="qualification1">
+                        <option value="">-- Select --</option>
+                        <option value="10th Pass">10th Pass</option>
+                        <option value="12th Pass">12th Pass</option>
+                        <option value="Diploma in Engineering">Dip. in Eng.</option>
+                        <option value="Bachelor's Degree (B.A., B.Sc., B.Com)">Bachelor's Degree</option>
+                        <option value="Bachelor of Technology (B.Tech)">Bachelor of Tech.</option>
+                        <option value="Bachelor of Computer Applications (BCA)">Bachelor of CSE</option>
+                        <option value="Master's Degree (M.A., M.Sc., M.Com)">Master's Degree</option>
+                        <option value="Master of Technology (M.Tech)">Master of Tech.</option>
+                        <option value="Master of Computer Applications (MCA)">Master of CSE</optiosn>
+                        <option value="MBA">MBA</option>
+                        <option value="PhD">PhD</option>
+                        <option value="Other">Other</option>
+                        </select>
+                    </td>
+                <td>
+                     <input list="boardOrUni" name="board_or_uni1">
+                        <datalist id="boardOrUni">
+                            <!-- Boards -->
+                            <option value="Board: CBSE (Central Board of Secondary Education)">
+                            <option value="Board: ICSE (Indian Certificate of Secondary Education)">
+                            <option value="Board: NIOS (National Institute of Open Schooling)">
+                            <option value="Board: State Board">
+
+                            <!-- Universities -->
+                            <option value="University: Delhi University (DU)">
+                            <option value="University: University of Mumbai">
+                            <option value="University: Jawaharlal Nehru University (JNU)">
+                            <option value="University: Anna University">
+                            <option value="University: IGNOU (Indira Gandhi National Open University)">
+                            <option value="University: Amity University">
+                            <option value="University: Lovely Professional University (LPU)">
+                            <option value="University: Christ University">
+                            <option value="University: SRM Institute of Science and Technology">
+                            <option value="University: VIT (Vellore Institute of Technology)">
+                            <option value="University: BITS Pilani">
+                            <option value="University: Manipal University">
+                            <option value="University: Other">
+                        </datalist>
+                </td>
+                <td><input type="number" name="year" id="year" min="1910" max="2040"></td>
+                <td><input type="number" name="max-marks" min="-1000" max="1000"></td>
+                <td><input type="number" name="marks-obtained" min="0" max="1000"></td>
+                <td><input type="number" name="percentage" min="0" max="100"></td>
+            </tr>
+            <tr>
+                <td><label for="sno">2</label></td>
+                <td><select id="qualification1" name="qualification1">
+                        <option value="">-- Select --</option>
+                        <option value="10th Pass">10th Pass</option>
+                        <option value="12th Pass">12th Pass</option>
+                        <option value="Diploma in Engineering">Dip. in Eng.</option>
+                        <option value="Bachelor's Degree (B.A., B.Sc., B.Com)">Bachelor's Degree</option>
+                        <option value="Bachelor of Technology (B.Tech)">Bachelor of Tech.</option>
+                        <option value="Bachelor of Computer Applications (BCA)">Bachelor of CSE</option>
+                        <option value="Master's Degree (M.A., M.Sc., M.Com)">Master's Degree</option>
+                        <option value="Master of Technology (M.Tech)">Master of Tech.</option>
+                        <option value="Master of Computer Applications (MCA)">Master of CSE</optiosn>
+                        <option value="MBA">MBA</option>
+                        <option value="PhD">PhD</option>
+                        <option value="Other">Other</option>
+                        </select>
+                </td>
+                <td><input list="boardOrUni" name="board_or_uni2"></td>
+                <td><input type="number" name="year" id="year" min="1910" max="2040"></td>
+                <td><input type="number" name="max-marks" min="-1000" max="1000"></td>
+                <td><input type="number" name="marks-obtained" min="0" max="1000"></td>
+                <td><input type="number" name="percentage" min="0" max="100"></td>
+            </tr>
+            <tr>
+                <td><label for="sno">3</label></td>
+                <td><select id="qualification1" name="qualification1">
+                        <option value="">-- Select --</option>
+                        <option value="10th Pass">10th Pass</option>
+                        <option value="12th Pass">12th Pass</option>
+                        <option value="Diploma in Engineering">Dip. in Eng.</option>
+                        <option value="Bachelor's Degree (B.A., B.Sc., B.Com)">Bachelor's Degree</option>
+                        <option value="Bachelor of Technology (B.Tech)">Bachelor of Tech.</option>
+                        <option value="Bachelor of Computer Applications (BCA)">Bachelor of CSE</option>
+                        <option value="Master's Degree (M.A., M.Sc., M.Com)">Master's Degree</option>
+                        <option value="Master of Technology (M.Tech)">Master of Tech.</option>
+                        <option value="Master of Computer Applications (MCA)">Master of CSE</optiosn>
+                        <option value="MBA">MBA</option>
+                        <option value="PhD">PhD</option>
+                        <option value="Other">Other</option>
+                        </select>
+                </td>
+                <td><input list="boardOrUni" name="board_or_uni3"></td>
+                <td><input type="number" name="year" id="year" min="1910" max="2040"></td>
+                <td><input type="number" name="max-marks" min="-1000" max="1000"></td>
+                <td><input type="number" name="marks-obtained" min="0" max="1000"></td>
+                <td><input type="number" name="percentage" min="0" max="100"></td>
+            </tr>
+            <tr>
+                <td><label for="sno">4</label></td>
+                <td><select id="qualification1" name="qualification1">
+                        <option value="">-- Select --</option>
+                        <option value="10th Pass">10th Pass</option>
+                        <option value="12th Pass">12th Pass</option>
+                        <option value="Diploma in Engineering">Dip. in Eng.</option>
+                        <option value="Bachelor's Degree (B.A., B.Sc., B.Com)">Bachelor's Degree</option>
+                        <option value="Bachelor of Technology (B.Tech)">Bachelor of Tech.</option>
+                        <option value="Bachelor of Computer Applications (BCA)">Bachelor of CSE</option>
+                        <option value="Master's Degree (M.A., M.Sc., M.Com)">Master's Degree</option>
+                        <option value="Master of Technology (M.Tech)">Master of Tech.</option>
+                        <option value="Master of Computer Applications (MCA)">Master of CSE</optiosn>
+                        <option value="MBA">MBA</option>
+                        <option value="PhD">PhD</option>
+                        <option value="Other">Other</option>
+                        </select>
+                </td>
+                <td><input list="boardOrUni" name="board_or_uni4"></td>
+                <td><input type="number" name="year" id="year" min="1910" max="2040"></td>
+                <td><input type="number" name="max-marks" min="-1000" max="1000"></td>
+                <td><input type="number" name="marks-obtained" min="0" max="1000"></td>
+                <td><input type="number" name="percentage" min="0" max="100"></td>
+            </tr>            
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Language Knowledge</legend>
+        <table>
+            <tr>
+                <td><label for="language">Language</label></td>
+                <td><label for="reading">Reading</label></td>
+                <td><label for="writing">Writing</label></td>
+                <td><label for="spoken">Spoken</label></td>
+            </tr>
+            <tr>
+                <td><label for="language">Hindi</label></td>
+                <td><input type="checkbox" name="reading" id="reading"></td>
+                <td><input type="checkbox" name="writing" id="writing"></td>
+                <td><input type="checkbox" name="spoken" id="spoken"></td>
+            </tr>
+            <tr>
+                <td><label for="language">English</label></td>
+                <td><input type="checkbox" name="reading" id="reading"></td>
+                <td><input type="checkbox" name="writing" id="writing"></td>
+                <td><input type="checkbox" name="spoken" id="spoken"></td>
+            </tr>
+            <tr>
+                <td><label for="language">Japanese</label></td>
+                <td><input type="checkbox" name="reading" id="reading"></td>
+                <td><input type="checkbox" name="writing" id="writing"></td>
+                <td><input type="checkbox" name="spoken" id="spoken"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <table>
+            <legend>Identification Details</legend>
+            <tr>
+                <td><label for="aadhar">Aadhar Card Number</label></td>
+                <td><input type="number" name="aadhar" id="aadhar"></td>
+                <td><label for="pan">Pan Card Number</label></td>
+                <td><input type="text" name="pan" id="pan"></td>
+            </tr>
+            <tr>
+                <td><label for="aadhar">Upload Photo</label></td>
+                <td><input type="file" name="file" id="file"></td>
+                <td><label for="pan">Upload Signature</label></td>
+                <td><input type="file" name="pan" id="pan"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <div class="center">
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Back</button>
+    </div>
+    </form>
+</body>
+</html>

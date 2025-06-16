@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .contentContainer{
+            /* border: 1px solid black; */
+            width: 750px;
+        }
+        .heading{
+             background-color: blue;
+             height: 70px;
+             color: white;
+             width: 700px;
+             margin-left: 10px;
+             text-align: center;
+             padding-top: 1px;
+        }
+        fieldset{
+            width: 600px;
+            border: 1px solid grey;
+        }
+        .inputs{
+            padding-top: 10px;
+            padding-left: 15px;
+        }
+        fieldset{
+            padding-left: 15px;
+            margin-left: 15px;
+            margin-top: 15px;
+        }
+        td{
+            padding-right: 40px;
+            border: 0px;
+            height: 40px;
+            padding-left: 10px;
+            padding-right: 30px;
+        }
+        table{
+            border-radius: 4px;
+            margin-top: 10px;
+            width: 660px;
+            font-size: 14px;
+        }
+        .colored{
+            background-color: rgb(21, 248, 21);
+            border: 0px;
+            color: white;
+            border-radius: 0cap;
+        }
+        .special{
+            padding-right: 42px;
+        }
+        .special2{
+            padding-right: 13px;
+        }
+        .grey{
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <form action="thankyou.html" method="post">
+    <div class="contentContainer">
+        <div class="heading"><h1>Task Schedular</h1></div>
+        <div class="inputs">
+            <!-- div for headings -->
+            <input type="text" placeholder="Enter Task..">
+            <select name="" id="">
+                <option value="">Top Priority</option>
+                <option value="">Average Priority</option>
+                <option value="">Low Priority</option>
+                <option value="">Not Important</option>
+            </select>
+            <input type="date" name="" id="">
+            <button type="submit" class="grey">Add Task</button>
+        </div>
+        <div>
+            <fieldset>
+                <div>
+                    <table cellspacing="0" border="1">
+                        <td>DSA Priority</td>
+                        <td>Priority: top</td>
+                        <td>Deadline: 2023-08-24</td>
+                        <td><button class="colored" type="submit">Mark Done</button></td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table cellspacing="0" border="1">
+                        <td class="special">JS Priority</td>
+                        <td>Priority: top</td>
+                        <td>Deadline: 2023-08-24</td>
+                        <td><button class="colored" type="submit">Mark Done</button></td>
+                        </tr>
+                    </div>  
+                    <div>
+                    <table cellspacing="0" border="1">
+                        <td class="special2">Maths Practise</td>
+                        <td>Priority: top</td>
+                        <td>Deadline: 2023-08-24</td>
+                        <td><button class="colored" type="submit">Mark Done</button></td>
+                        </tr>
+                    </div> 
+                </fieldset>             
+        </div>
+    </div>
+    </form>
+</body>
+</html>
+<!--  -->

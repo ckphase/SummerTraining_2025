@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table Test - Assignment</title>
+  <style>
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+      width: 1000px;
+      align-items: center;
+    }
+    td, th {
+      border: 1px solid black;
+      padding: 8px;
+    }
+    td {
+      font-size: 16px;
+      color: black;
+    }
+    .art { 
+        background-color: plum; 
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+    }
+    .french { 
+        background-color: lightgreen;
+        font-weight: bold;
+        color: black;
+    }
+    .pe { 
+        background-color: lavender; 
+        font-weight: bold;
+        color: black;
+    }
+    .timings{
+        background-color: rgb(199, 229, 240);
+        font-weight: bold;
+        color: black;
+        width: 100px;
+    }
+    .heading-line{
+        background-color:  rgb(199, 229, 240);
+    }
+    caption {
+      font-size: 34px;
+      font-weight: bold;
+      color: black;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .b{
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+<table>
+    <table class="header">
+        <caption>Practise of tables</caption>
+        <tr>
+            <th colspan="6" class="title">Weekly Schedule</th>
+        </tr>
+        <tr class="heading-line">
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td class="timings">8:55</td>
+            <td colspan="5">Wash Hands & Brain Buster</td>
+        </tr>
+        <tr>
+            <td class="timings">9:20-9:50</td>
+            <td>Class Meeting</td>
+            <td>Language Arts</td>
+            <td rowspan="2">Unit of Inquiry/Language Arts</td>
+            <td rowspan="3">Unit of Inquiry/Language Arts</td>
+            <td>Reflect/Clean Up/Catch Up</td>
+        </tr>
+        <tr>
+            <td class="timings">9:50-10:30</td>
+            <td rowspan="2">Unit of Inquiry/Language Arts</td>
+            <td class="art" rowspan="2">ART(NIT)</td>
+            <td rowspan="2">Unit of Inquiry/Language Arts</td>
+        </tr>
+        
+        <tr>
+            <td class="timings">10:00-10:40</td>
+           <td class="french">French(NIT)</td>
+        </tr>
+        <tr>
+            
+            <td colspan="6"><B>Recess (10:40 - 11:00)</B></td>
+        <tr>
+            <td class="timings">11:00-11:40</td>
+            <td>Math</td>
+            <td>Math</td>
+            <td>Math</td>
+            <td>Math</td>
+           <td rowspan="2">P.S.P.E</td>
+        </tr>
+        <tr>
+            <td class="timings">11:40-12:15</td>
+            <td>Daily Physical Activity</td>
+            <td>Journal</td>
+            <td>Daily Physical Activity</td>
+            <td>Journal</td>
+            
+        </tr>
+        <tr>
+            <td colspan="6" class="one"><b>Lunch (12:15-12:30) Outside (12:30-1:08)</b></td>
+        </tr>
+        <tr>
+            <td class="timings">1:10-1:40</td>
+            <td>D.E.A.R</td>
+            <td>D.E.A.R</td>
+            <td>D.E.A.R</td>
+            <td>D.E.A.R</td>
+            <td>D.E.A.R</td>
+        </tr>
+        <tr>
+            <td class="timings">1:40-2:20</td>
+            <td rowspan="2">Unit of Inquiry</td>
+            <td class="pe">Physical Education</td>
+            <td>Planner/Job/Self-Manage</td>
+            <td class="pe">Physical Education</td>
+            <td>Unit of Inquiry</td>
+        </tr>
+        <tr>
+            <td class="timings">2:20-2:50</td>
+            <td>Unit of Inquiry</td>
+            <td rowspan="2"></td>
+            <td>Unit of Inquiry</td>
+            <td>Drama</td>
+        </tr>
+        <tr>
+            <td class="timings">2:50-3:10</td>
+            <td>Planner/Job/Self-Manage</td>
+            <td>Planner/Job/Self-Manage</td>
+            <td>Planner/Job/Self-Manage</td>
+            <td>Planner/Job/Self-Manage</td>
+        </tr>
+</table>
+
+</body>
+</html>
