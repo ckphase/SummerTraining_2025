@@ -37,7 +37,12 @@
       background-image: url(https://s3.amazonaws.com/speedhunters-wp-production/wp-content/uploads/2018/04/23053741/Tokyo2018_Everingham_SH_-26-1200x800.jpg);
       background-repeat: no-repeat;
       background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
+    
     #top-btn{
       border-radius: 10px;
       border: 0px;
@@ -74,10 +79,12 @@
 }
 
 #destination-title p {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 30px;
+font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
   color: #333;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #destination-body {
@@ -113,7 +120,7 @@
 
 /* ABOUT US */
 .about-section{
-      height: 500px;
+      height: 400px;
       width: 100%;
       background-color: white;
       display: flex;
@@ -123,18 +130,15 @@
       gap: 50px;
 }
 
-.heading {
-  color: rgb(0, 0, 0); /* Ensures visibility */
-  width: 100%;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  font-weight: bold;
+.section-heading {
+  padding-top: 30px;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #333;
+  text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 
 .aboutContent p{
     max-width: 500px;
@@ -161,11 +165,12 @@
 }
 
 .pName h2 {
-   margin: 0;
   font-size: 32px;
-  margin-bottom: 40px;
   font-weight: 600;
+  margin-bottom: 40px;
   color: #333;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .pContainers {
