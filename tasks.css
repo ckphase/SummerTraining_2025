@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Layout container */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #d8c5b4;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar .profile img {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.sidebar .profile h2 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.sidebar .profile p {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.nav-links {
+  list-style: none;
+  margin-top: 30px;
+  width: 100%;
+  padding-left: 0;
+}
+
+.nav-links li {
+  margin: 15px 0;
+}
+
+.nav-links a {
+  color: #222;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 10px;
+  display: block;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #ffbb33;
+  color: #000;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  background-color: #fff;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #222;
+}
+
+.filter-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: none;
+  background-color: #eee;
+  color: #333;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.tab:hover {
+  background-color: #ffbb33;
+  color: #000;
+}
+
+.tab.active {
+  background-color: #ffbb33;
+  color: #000;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 40px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.1em;
+  color: #222;
+}
+
+.card p {
+  font-size: 0.9em;
+  color: #666;
+}
