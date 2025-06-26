@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        .customHeight{
+            height: 120px;
+        }
+        .height{
+            height: 120px;
+        }
+        .grey{
+            background-color: rgb(108,117,125);
+        }
+        .textColor{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center bg-danger customHeight fs-3 textColor">
+                Header
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 bg-success height fs-3 textColor">Sidebar 1</div>
+            <div class="col-md-6 bg-warning height fs-3 textColor">Sidebar 2</div>
+            <div class="col-md-3 bg-primary height fs-3 textColor">Sidebar 3</div>
+        </div>
+        <div class="row">
+            <div class="col customHeight fs-3 grey textColor">
+                Footer
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

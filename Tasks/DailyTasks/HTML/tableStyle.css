@@ -1,0 +1,50 @@
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+      width: 1000px;
+      align-items: center;
+    }
+    td, th {
+      border: 1px solid black;
+      padding: 8px;
+    }
+    td {
+      font-size: 16px;
+      color: black;
+    }
+    .art { 
+        background-color: plum; 
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+    }
+    .french { 
+        background-color: lightgreen;
+        font-weight: bold;
+        color: black;
+    }
+    .pe { 
+        background-color: lavender; 
+        font-weight: bold;
+        color: black;
+    }
+    .timings{
+        background-color: rgb(199, 229, 240);
+        font-weight: bold;
+        color: black;
+        width: 100px;
+    }
+    .heading-line{
+        background-color:  rgb(199, 229, 240);
+    }
+    caption {
+      font-size: 34px;
+      font-weight: bold;
+      color: black;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .b{
+      align-items: center;
+    }
