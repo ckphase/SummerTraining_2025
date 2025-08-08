@@ -16,9 +16,9 @@ include 'header.php';
     </div>
   </section>
   <section class="cta">
-    <a href="#">Daily Tasks</a>
-    <a href="#">Weekly Tasks</a>
-    <a href="#" class="highlight">Project Work</a>
+    <a href="tasks.php">Daily Tasks</a>
+    <a href="tasks.php">Weekly Tasks</a>
+    <a href="http://13.204.35.162/landing/index.php" class="highlight">Project Work</a>
   </section>
   <!-- second part: about O7 services -->
 <section class="story">
