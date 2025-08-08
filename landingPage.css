@@ -198,6 +198,7 @@
   padding: 60px 20px;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: -70px;
 }
 
 .about-me h3 {
@@ -326,7 +327,7 @@
 /* counters */
 /* Summary Section */
 .summary-section {
-  padding: 60px 40px;
+  padding: 60px 20px;
   background-color: #d8c5b4;
   text-align: center;
 }
