@@ -15,7 +15,7 @@
       <li><a href="company.php">Company</a></li>
       <li><a href="tasks.php">Assignments</a></li>
       <li><a href="http://13.204.35.162/landing/index.php">Project</a></li>
-      <li><a href="#">Learning</a></li>
+      <li><a href="learning.php">Learning</a></li>
     </ul>
     <a href="http://13.204.35.162/landing/index.php" class="btn">Check Project</a>
   </nav>
