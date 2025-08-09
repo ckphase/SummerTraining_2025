@@ -63,7 +63,7 @@ include 'header.php';
     </blockquote>
   </div>
 </section>
-<
+
 <?php
 include 'footer.php';
 ?>
