@@ -1,13 +1,16 @@
 <?php
 include 'header.php';
 ?>
-<section class="farewell-hero">
-  <div class="hero-content">
-    <h1>My Internship Journey at O7 Services</h1>
-    <p class="intro-text">A 45-day journey of growth, learning, and unforgettable experiences.</p>
-  </div>
-</section>
-
+  <!-- hero section -->
+  <section class="hero" style="height: 300px;">
+    <div class="image-bg-left"></div>
+    <div class="text-overlay">
+      <p class="small-text ">O7 SERVICES | COMPANY</p>
+      <h1>My Internship Journey at O7 Services</h1>
+      <p class="intro-text">A 45-day journey of growth, learning, and unforgettable experiences.</p>
+    </div>
+  </section>
+    
 <section class="farewell-section">
   <h3>THANK YOU O7 SERVICES</h3>
   <h2>A Wonderful Journey</h2>
